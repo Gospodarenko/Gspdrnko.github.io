@@ -1,0 +1,70 @@
+<style type="text/css">
+body
+{
+	background-image: url(images/number.png)
+}
+h2
+{
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 20px;
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+}
+button
+{
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 15px;
+	color: #fff;
+	padding: 10px 20px;
+	border: 2px solid #000
+	cursor: pointer;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: -webkit-linear-gradient(top, #A9A9A9, #000);
+	background: linear-gradient(top, #A9A9A9, #000);
+	-webkit-box-shadow: 10px 10px 6px rgba(0,0,0,0.5);
+	box-shadow: 10px 10px 6px rgba(0,0,0,0.5);
+	-webkit-user-select: none;
+	user-select: none;
+}
+button:hover
+{
+	background: -webkit-linear-gradient(top, #0000FF, #DCDCDC);
+	background: linear-gradient(top, #0000FF, #DCDCDC);
+}
+button:active
+{
+	background: -webkit-linear-gradient(top, #FF0000, #DCDCDC);
+}
+/*Свойсва прямоугольника, содержащего шкалу и стрелку*/
+#stage
+{
+	width: 300px;
+	height: 50px
+	position: relative;
+}
+/*Свойства шкалы*/
+#scale
+{
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0 px;
+	background-image: url(images/scale.png);
+}
+/*Свойства стрелки*/
+#arrow
+{
+	width: 13px;
+	height: 25px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url(images/arrow.png);
+	/*Transition*/
+	-webkit-transition: left 0.5s ease-out 0s;
+	transition: left 0.5s ease-out 0s;
+}
+</style>
